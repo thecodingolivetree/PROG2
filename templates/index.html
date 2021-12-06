@@ -2,16 +2,18 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <link href="main.css" rel="stylesheet2">
     <link crossorigin="anonymous" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
           integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" rel="stylesheet">
+    <link href="{{ url_for('static', filename='main.css') }}" rel="stylesheet">
     <title>Willkommen! </title>
     <h1>Buche deine Surflesson noch heute!</h1>
 
 </head>
 <body>
-<h2> liebe/r {{ name }} </h2>
+<h2> Aloha {{ name }}! </h2>
 <div>
-
+Schön bist du hier. Buche heute deine Surflektion mit mir.
 </div>
 <form action='/create/subscription' method="get"><input class="btn btn-primary" type="submit" value="Anmelden"></form>
 </body>

@@ -1,8 +1,16 @@
 h1 {
-color:pink
+color:LightSeaGreen;
+}
+
+h4 {
+color:LightSeaGreen
 }
 .create-subscription-form {
-    width: 80%;
+    width: 70%;
     margin: auto;
+}
+
+p1 {
 
 }
+body {background-color: azure}

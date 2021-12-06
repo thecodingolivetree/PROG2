@@ -1,9 +1,12 @@
 <!DOCTYPE html>
+<!-- Quelle: We3schools.com -->
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <link href="main.css" rel="stylesheet2">
     <link crossorigin="anonymous" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
           integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" rel="stylesheet">
+
     <title>Formular Surflesson</title>
     <link href="{{ url_for('static', filename='main.css') }}" rel="stylesheet">
 </head>
@@ -13,41 +16,99 @@
     <form action="/save/subscription" method="POST">
 
         <h1>Hello {{ name }} </h1>
-        <h2>Melde dich hier an für eine Surf-Lektion mit Olivia.</h2>
-        <label for="vorname">Vorname</label>
-        <input class="form-control" id="vorname" name="vorname" placeholder="Bitte geben Sie Ihren Vornamen ein"
-               type="text">
+        <h2>Melde dich hier an für eine Surf-Lektion mit Olivia!</h2>
+        <p>Eine Übersicht zu den Preisen und Kursen:
+        <a href="https://solidsurfhouse.com/surfcamp/srilanka/">Klick Hier</a>.</p>
+        <p></p>
+
+        <label for="level">Welches Level haben Sie?</label><br>
+            <select id="level" name="level">
+             <option value="beginner">Beginner</option>
+             <option value="intermediate">Intermediate</option>
+                <option value="advanced">Advanced</option>
+            </select>
+        <p></p>
+
+        <h4> An welchem Datum möchten Sie mit mir surfen?</h4>
+
+            <p></p>
+
+        <label> Beginner</label><p></p>
+        <input type="checkbox" id="beginnerdate1" name="beginnerdate", value="10:00 Uhr, 22.02.2022">
+        <label> 10:00 Uhr, 22.02.2022 </label><br>
+        <input type="checkbox" id="beginnerdate2" name="beginnerdate", value="14:00 Uhr, 22.02.2022">
+        <label> 14:00 Uhr, 22.02.2022 </label><br>
+        <input type="checkbox" id="beginnerdate3" name="beginnerdate", value="08:00 Uhr, 23.02.2022">
+        <label> 08:00 Uhr, 23.02.2022 </label><br>
+            <p></p>
+
+        <label> Intermediate </label><p></p>
+        <input type="checkbox" id="intermediatedate1" name="intermediatedate" value="07:00 Uhr, 26.02.2022">
+        <label> 07:00 Uhr, 26.02.2022 </label><br>
+        <input type="checkbox" id="intermediatedate2" name="intermediatedate" value="15:00 Uhr, 26.02.2022">
+        <label> 15:00 Uhr, 26.02.2022 </label><br>
+        <input type="checkbox" id="intermediatedate3" name="intermediatedate" value="09:00 Uhr, 27.02.2022">
+        <label> 09:00 Uhr, 27.02.2022 </label><br>
+            <p></p>
+        <label> Advanced </label><p></p>
+        <input type="checkbox" id="advanceddate1" name="advanceddate1" value="07:00 Uhr, 12.02.2022">
+        <label> 07:00 Uhr, 12.02.2022 </label><br>
+        <input type="checkbox" id="advanceddate2" name="advanceddate1" value="07:00 Uhr, 13.02.2022">
+        <label> 07:00 Uhr, 13.02.2022 </label><br>
+        <input type="checkbox" id="advanceddate3" name="advanceddate1" value="16:00 Uhr, 13.02.2022">
+        <label> 16:00 Uhr, 13.02.2022 </label><br>
+        <p></p>
+
+        <label for="surfboard">Möchten Sie ein Surfboard mieten? </label><br>
+            <select id="surfboard" name="surfboard">
+             <option value="ja">Ja</option>
+             <option value="nein">Nein</option>
+            </select><p></p>
+
+        <label for="insurance">Brauchen Sie eine Versicherung? </label><br>
+            <select id="insurance" name="insurance">
+             <option value="ja">Ja</option>
+             <option value="nein">Nein</option>
+            </select><p></p>
+
+        <label for="transport">Brauchen Sie eine Transport zum Surfspot? </label><br>
+            <select id="transport" name="transport">
+             <option value="ja">Ja</option>
+             <option value="nein">Nein</option>
+            </select>
+
+        <p></p>
+        <h4> Kontaktdaten </h4>
+         <label for="sex">Geschlecht</label><br>
+            <select id="sex" name="sex">
+             <option value="weiblich">Weiblich</option>
+             <option value="maennlich">Männlich</option>
+                <option value="andere">Andere</option>
+            </select>
+        <p></p>
 
         <label for="name">Name</label>
         <input class="form-control" id="name" name="name" placeholder="Bitte geben Sie Ihren Namen ein" type="text">
+
+        <label for="vorname">Vorname</label>
+        <input class="form-control" id="vorname" name="vorname" placeholder="Bitte geben Sie Ihren Vornamen ein"
+               type="text">
 
         <label for="adresse">Adresse</label>
         <input class="form-control" id="adresse" name="adresse" placeholder="Bitte geben Sie Ihre Adresse ein"
                type="text">
 
-        <label for="adresse">Geburtstag</label>
+        <label for="geburi">Geburtstag</label>
         <input class="form-control" id="geburi" name="geburi" placeholder="Bitte geben Sie Ihr Geburtsdatum ein"
                type="date">
 
         <label for="mail">E-Mail</label>
-        <input class="form-control" id="mail" name="mail" placeholder="Bitte geben Sie Ihre E-Mail" type="text">
+        <input class="form-control" id="mail" name="mail" placeholder="Bitte geben Sie Ihre E-Mail ein" type="text">
 
         <label for="tel">Telefonnummer</label>
         <input class="form-control" id="tel" name="tel" placeholder="Bitte geben Sie Ihre Telefonummer ein" type="text">
-
-        <h2> Wann möchten Sie mit mir surfen?</h2>
-        <!--        <a href="{{ url_for('hello')}}">Link zur Übersicht</a>-->
-
-        <h4>Daten </h4>
-        <input class="form-check-input" id="sex" name="sex1" type="checkbox" value="weiblich">
-        <label class="form-check-label" for="sex"> weiblich </label><br>
-        <input class="form-check-input" id="sex2" name="sex2" type="checkbox" value="männlich">
-        <label class="form-check-label" for="sex2"> männlich</label><br>
-        <input class="form-check-input" id="sex3" name="vsex3" type="checkbox" value="andere">
-        <label class="form-check-label" for="sex3"> andere </label>
-        <button class="btn btn-primary" type="submit">Senden</button>
-        <button class="btn btn-primary" type="submit">Senden</button>
-
+<br></br>
+<button class="btn btn-primary" type="submit">Senden</button>
 
     </form>
 </div>
