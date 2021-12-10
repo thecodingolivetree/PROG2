@@ -1,9 +1,8 @@
 # PROG2
-19.11.2021:
-- Ausgabe-File wurde erstellt und Formular gespeichert,
-jedoch hat es noch Fehler im Formular
+10.12. 
+To-Do: Berechnungen von den Daten via len(beginnerdate) versucht.
+somit zählt es die daten und soll dann den preis berechnen (50 fr.)
 
-Nächstes Mal:
-- Formular und Checkboxen prüfen
-- CSS überprüfen und auf alle HTML files anwenden
-- JSON File erstellen für Die Speicherung
+To Do:
+- Berechnung hinbringen
+- json file soll die Preise auch ausgeben, aus buchhalterischen Gründen.

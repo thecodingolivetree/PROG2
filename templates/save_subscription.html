@@ -13,29 +13,39 @@
 
 <h2>Hey {{vorname}} </h2>
 <h3> Danke für dein Buchung. Hier sind deine Buchungsdetails: </h3>
-<h4> Name: {{name}}</h4>
-<h4> Vorname: {{vorname}}</h4>
-<h4> Geschlecht: {{sex}}</h4>
-<h4> Adresse: {{adresse}}</h4>
-<h4> Geburtstag: {{geburi}}</h4>
-<h4> E-Mail: {{mail}}</h4>
-<h4> Telfonnummer: {{tel}}</h4>
+<h6> Name: {{name}}</h6>
+<h6> Vorname: {{vorname}}</h6>
+<h6> Geschlecht: {{sex}}</h6>
+<h6> Adresse: {{adresse}}</h6>
+<h6> Geburtstag: {{geburi}}</h6>
+<h6> E-Mail: {{mail}}</h6>
+<h6> Telfonnummer: {{tel}}</h6>
 
 <h2> Dein Surf-Kalender:</h2>
-<h4> Dein Level: {{level}} </h4>
-<h4> Deine Kurse: {{beginnerdate}}, {{intermediatedate}},{{advanceddate}} </h4>
-<h4> Preis: total_price </h4>
+<h6> Dein Level: {{level}} </h6>
+<h6> Deine Kurse:
 
-{% for item in {{beginnerdate}} %}
-{{item}} <br>
+    <ul>
+{% for ding in beginnerdate %}
+<li>{{ ding }}</li>
+
 {% endfor %}
 
-<!--{% for item in liste %}-->
-<!--<ul>-->
-<!--{{item}}-->
-<!--</ul>-->
+{% for ding in intermediatedate %}
+<li>{{ ding }}</li>
 
-<!--{%endfor%}-->
+{% endfor %}
+
+{% for ding in advanceddate %}
+<li>{{ ding }}</li>
+
+{% endfor %}
+
+</ul>
+
+</h6>
+
+<h6> Endpreis: {{costs}} Fr. </h6>
 
 </body>
 </html>

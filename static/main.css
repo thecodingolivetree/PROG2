@@ -2,15 +2,24 @@ h1 {
 color:LightSeaGreen;
 }
 
+h3 {
+color:LightSeaGreen;
+}
+
+h2 {
+color:LightSeaGreen;
+}
+
 h4 {
-color:LightSeaGreen
+color:LightSeaGreen;
+}
+
+h6 {
+color:black;
 }
 .create-subscription-form {
     width: 70%;
     margin: auto;
 }
 
-p1 {
-
-}
 body {background-color: azure}
