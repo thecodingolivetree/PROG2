@@ -1,23 +1,27 @@
 from flask import Flask, request, render_template
 import json
+import database_service
 app = Flask("Hello World")
 
-def calculate_costs(surfboard, transport,insurance): #Input Herr Odoni
+def calculate_costs(surfboard, transport,insurance, beginnerdate, intermediatedate, advanceddate): #Input Herr Odoni
+    return calculate_optional_selection_cost(surfboard, transport,insurance) + calculate_costs_lessons(beginnerdate, intermediatedate, advanceddate)
+
+def calculate_optional_selection_cost(surfboard, transport,insurance):
+    cost_metrics = database_service.get_costs_dict()
     costs=0
     if surfboard=="ja":
-        costs += 20
+        costs += cost_metrics['surfboard']
     if transport =="ja":
-        costs += 30
+        costs += cost_metrics['transport']
     if insurance =="ja":
-        costs += 50
+        costs += cost_metrics['insurance']
     return costs
 
 def calculate_costs_lessons(beginnerdate, intermediatedate, advanceddate):
-    lesson_costs=50
-    beginner_date_anzahl = len(beginnderdate)
-   if beginner_date_anzahl => 1:
-       costs = beginnerdate_anzahl + lesson_costs
-        print(lesson_costs)
+    cost_metrics = database_service.get_costs_dict()
+
+    total_course_count = len(beginnerdate) + len(intermediatedate) + len(advanceddate);
+    return total_course_count*cost_metrics['basic_lesson']
 
 
 @app.route("/", methods=['GET', 'POST'])  # "/" bedeutet es rootet immer zurück auf die Landingpage
@@ -31,12 +35,8 @@ def render_create_subscription_form():
 
 @app.route("/save/subscription", methods=['POST'])
 def save_new_subscription():
-
-    d = open("datenspeicher.json")
-    datenspeicher_list = json.load(d)
-
-    # Quelle: https://www.youtube.com/watch?v=_sgVt16Q4O4
     if request.method == "POST":
+
         beginnerdate = request.form.getlist("beginnerdate")
         intermediatedate = request.form.getlist("intermediatedate")
         advanceddate = request.form.getlist("advanceddate")
@@ -51,20 +51,25 @@ def save_new_subscription():
         geburi = request.form.get("geburi")
         mail = request.form.get("mail")
         tel = request.form.get("tel")
-        costs=calculate_costs(surfboard, transport, insurance)
+        costs=calculate_costs(surfboard, transport, insurance, beginnerdate, intermediatedate, advanceddate)
 
-        # print("Beginnerdate: ", beginnerdate)
-        # print("intermediatedate: ", intermediatedate)
-        # print("Beginnerdate: ", beginnerdate)
-
-        datenspeicher_list.append({"level": level, "datumBeginner": beginnerdate,"datumIntermediate": intermediatedate, "datumAdvanced": advanceddate, "surfboard": surfboard, "versicherung": insurance, "geschlecht": sex,"name": name, "vorname": vorname,"adresse": adresse, "geburtstag": geburi, "mail": mail, "telefon": tel, "transport": transport})
-
-        with open('datenspeicher.json', 'w') as f:
-            json.dump(datenspeicher_list, f, indent=4, sort_keys=True, separators=(",", ":")) #https://docs.python.org/3/library/json.html
-
+        database_service.save_subscription(beginnerdate,
+                                                         request.form.getlist("intermediatedate"),
+                                                         request.form.getlist("advanceddate"),
+                                                         request.form.get('level'),
+                                                         request.form.get("surfboard"),
+                                                         request.form.get("insurance"),
+                                                         request.form.get("transport"),
+                                                         request.form.get("sex"),
+                                                         request.form.get("name"),
+                                                         request.form.get("vorname"),
+                                                         request.form.get("adresse"),
+                                                         request.form.get("geburi"),
+                                                         request.form.get("tel"),
+                                                         request.form.get("mail"),
+                                                         calculate_costs(surfboard, transport, insurance, beginnerdate, intermediatedate, advanceddate)
+                                                         )
     return render_template("save_subscription.html", name=name, vorname=vorname, adresse=adresse, geburi=geburi, mail=mail, tel=tel, sex=sex,level=level, beginnerdate=beginnerdate, intermediatedate=intermediatedate, advanceddate=advanceddate,surfboard=surfboard, insurance=insurance, transport=transport, costs=costs)
-
-    return render_template("index.html", name="Du Schönheit!")
 
 
 if __name__ == "__main__":
