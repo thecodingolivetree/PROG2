@@ -1457,5 +1457,101 @@
         "transport":"ja",
         "versicherung":"ja",
         "vorname":""
+    },
+    {
+        "adresse":"",
+        "costs":200,
+        "datumAdvanced":[],
+        "datumBeginner":[
+            "14:00 Uhr, 22.02.2022"
+        ],
+        "datumIntermediate":[
+            "07:00 Uhr, 26.02.2022"
+        ],
+        "geburtstag":"",
+        "geschlecht":"weiblich",
+        "level":"beginner",
+        "mail":"",
+        "name":"",
+        "surfboard":"ja",
+        "telefon":"",
+        "transport":"ja",
+        "versicherung":"ja",
+        "vorname":""
+    },
+    {
+        "adresse":"",
+        "costs":100,
+        "datumAdvanced":[],
+        "datumBeginner":[],
+        "datumIntermediate":[],
+        "geburtstag":"",
+        "geschlecht":"weiblich",
+        "level":"beginner",
+        "mail":"",
+        "name":"",
+        "surfboard":"ja",
+        "telefon":"",
+        "transport":"ja",
+        "versicherung":"ja",
+        "vorname":""
+    },
+    {
+        "adresse":"",
+        "costs":100,
+        "datumAdvanced":[],
+        "datumBeginner":[],
+        "datumIntermediate":[],
+        "geburtstag":"",
+        "geschlecht":"weiblich",
+        "level":"beginner",
+        "mail":"",
+        "name":"",
+        "surfboard":"ja",
+        "telefon":"",
+        "transport":"ja",
+        "versicherung":"ja",
+        "vorname":""
+    },
+    {
+        "adresse":"Schachenweg 6c",
+        "costs":280,
+        "datumAdvanced":[
+            "16:00 Uhr, 13.02.2022"
+        ],
+        "datumBeginner":[
+            "10:00 Uhr, 22.02.2022",
+            "14:00 Uhr, 22.02.2022"
+        ],
+        "datumIntermediate":[
+            "07:00 Uhr, 26.02.2022"
+        ],
+        "geburtstag":"",
+        "geschlecht":"weiblich",
+        "level":"beginner",
+        "mail":"+41764577706",
+        "name":"Olivia Suter",
+        "surfboard":"nein",
+        "telefon":"olivia.suter@hotmail.com",
+        "transport":"ja",
+        "versicherung":"ja",
+        "vorname":""
+    },
+    {
+        "adresse":"",
+        "costs":100,
+        "datumAdvanced":[],
+        "datumBeginner":[],
+        "datumIntermediate":[],
+        "geburtstag":"",
+        "geschlecht":"weiblich",
+        "level":"beginner",
+        "mail":"",
+        "name":"",
+        "surfboard":"ja",
+        "telefon":"",
+        "transport":"ja",
+        "versicherung":"ja",
+        "vorname":""
     }
 ]

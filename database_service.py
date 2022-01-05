@@ -36,7 +36,7 @@ def save_subscription(beginnerdate, intermediatedate, advanceddate,
 def get_costs_dict():
     d = open("data/costs.json")
     costs = json.load(d)
-    return costs;
+    return costs
 
 def get_all_subscriptions():
     d = open("data/subscriptions.json")

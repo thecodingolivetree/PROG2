@@ -23,15 +23,26 @@ def calculate_costs_lessons(beginnerdate, intermediatedate, advanceddate):
     total_course_count = len(beginnerdate) + len(intermediatedate) + len(advanceddate);
     return total_course_count*cost_metrics['basic_lesson']
 
+@app.route("/admin/page", methods=['GET'])
+def ausgabe():
+    anmeldungen = database_service.get_all_subscriptions() #greift auf die Datenbank mit Anmeldung zu, dinger sind die anmeldungen.
+    return render_template("admin_page.html", dinger=anmeldungen)
+
+def auflisten():
+    anmeldungen = ""
+    for key, value in anmeldungen.items():
+        zeile = str(key) + ": " + value + "<br>"
+        anmeldungen_liste += zeile
+
+    return anmeldungen_liste
 
 @app.route("/", methods=['GET', 'POST'])  # "/" bedeutet es rootet immer zurück auf die Landingpage
 def hello():
-    return render_template("index.html", name="Du Schönheit!")
-
+    return render_template("index.html", name="Du Schönheit")
 
 @app.route("/create/subscription", methods=['GET'])
 def render_create_subscription_form():
-    return render_template("create_subscription.html", name="Du Schönheit!")
+    return render_template("create_subscription.html", name="Du Schönheit")
 
 @app.route("/save/subscription", methods=['POST'])
 def save_new_subscription():
