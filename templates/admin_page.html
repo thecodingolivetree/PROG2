@@ -10,19 +10,75 @@
 
 </head>
 <body>
-   <h2> Anmeldungen im Überblick: </h2>
-<ul>
-{% for ding in dinger %}
+<h2> Anmeldungen im Überblick: </h2>
+<!--<ul>-->
+<!--{% for ding in dinger %}-->
 
-    <li> {{ ding }}  </li>
+<!--    <li> {{ ding.adresse }}  </li>-->
 
 
+<!--    {% endfor %}-->
+<!--</ul>-->
+
+
+<table>
+    <tr>
+        <th>Date</th>
+        <th>Number of Participants</th>
+        <th>Money Earned</th>
+    </tr>
+        {% for course in kurse %}
+    <tr>
+        <td>{{course.date}}</td>
+        <td>{{course.numberOfParticipants}}</td>
+        <td>{{course.money}}</td>
+
+    </tr>
+        {% endfor %}
+
+</table>
+
+<H2>Total Earned over All courses</H2>
+<p>{{total}}CHF</p>
+
+<table>
+    <tr>
+        <th>Name</th>
+        <th>Vorname</th>
+        <th>geschlecht</th>
+        <th>geburtstag</th>
+        <th>adresse</th>
+        <th>telefon</th>
+        <th>mail</th>
+        <th>level</th>
+        <th>Advanced</th>
+        <th>Beginner</th>
+        <th>Surfboard</th>
+        <th>Transport</th>
+        <th>Versicherung</th>
+
+    </tr>
+    {% for ding in dinger %}
+    <tr>
+        <td>{{ding.name}}</td>
+        <td>{{ding.vorname}}</td>
+        <td>{{ding.geschlecht}}</td>
+        <td>{{ding.geburtstag}}</td>
+        <td>{{ding.adresse}}</td>
+        <td>{{ding.telefon}}</td>
+        <td>{{ding.mail}}</td>
+        <td>{{ding.level}}</td>
+        <td>{{ding.datumAdvanced}}</td>
+        <td>{{ding.datumBeginner}}</td>
+        <td>{{ding.surfboard}}</td>
+        <td>{{ding.transport}}</td>
+        <td>{{ding.versicherung}}</td>
+
+    </tr>
     {% endfor %}
-</ul>
 
 
-
-
+</table>
 
 
 </body>
