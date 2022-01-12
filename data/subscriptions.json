@@ -39,5 +39,101 @@
         "transport":"ja",
         "versicherung":"ja",
         "vorname":""
+    },
+    {
+        "adresse":"Bachstrasse 5",
+        "costs":150,
+        "datumAdvanced":[],
+        "datumBeginner":[
+            "10:00 Uhr, 22.02.2022"
+        ],
+        "datumIntermediate":[],
+        "geburtstag":"1998-02-04",
+        "geschlecht":"weiblich",
+        "level":"beginner",
+        "mail":"0765678765",
+        "name":"Hauser",
+        "surfboard":"ja",
+        "telefon":"joel.hauser@gmail.com",
+        "transport":"ja",
+        "versicherung":"ja",
+        "vorname":"Joel"
+    },
+    {
+        "adresse":"Randweg 6",
+        "costs":80,
+        "datumAdvanced":[
+            "07:00 Uhr, 12.02.2022"
+        ],
+        "datumBeginner":[],
+        "datumIntermediate":[],
+        "geburtstag":"1999-06-05",
+        "geschlecht":"weiblich",
+        "level":"beginner",
+        "mail":"0796782677",
+        "name":"Neuer",
+        "surfboard":"nein",
+        "telefon":"n_joelle@hotmail.com",
+        "transport":"ja",
+        "versicherung":"nein",
+        "vorname":"Joelle"
+    },
+    {
+        "adresse":"Himmelweg 7c",
+        "costs":120,
+        "datumAdvanced":[
+            "07:00 Uhr, 13.02.2022"
+        ],
+        "datumBeginner":[],
+        "datumIntermediate":[],
+        "geburtstag":"1995-08-08",
+        "geschlecht":"weiblich",
+        "level":"beginner",
+        "mail":"0775678900",
+        "name":"Waser",
+        "surfboard":"ja",
+        "telefon":"dominik.waser@gmail.ch",
+        "transport":"nein",
+        "versicherung":"ja",
+        "vorname":"Dominik"
+    },
+    {
+        "adresse":"Pfannenstrasse 10",
+        "costs":50,
+        "datumAdvanced":[
+            "16:00 Uhr, 13.02.2022"
+        ],
+        "datumBeginner":[],
+        "datumIntermediate":[],
+        "geburtstag":"1992-10-07",
+        "geschlecht":"weiblich",
+        "level":"advanced",
+        "mail":"0786782299",
+        "name":"Johanson",
+        "surfboard":"nein",
+        "telefon":"ida278johanson@gmail.ch",
+        "transport":"nein",
+        "versicherung":"nein",
+        "vorname":"Ida"
+    },
+    {
+        "adresse":"Anderer-Weg, 8763 Wolfhausen",
+        "costs":170,
+        "datumAdvanced":[],
+        "datumBeginner":[],
+        "datumIntermediate":[
+            "07:00 Uhr, 26.02.2022",
+            "15:00 Uhr, 26.02.2022"
+        ],
+        "geburtstag":"1992-08-07",
+        "geschlecht":"maennlich",
+        "level":"intermediate",
+        "mail":"0796676787",
+        "name":"Tomson",
+        "surfboard":"ja",
+        "telefon":"thetomsom1992@gmail.ch",
+        "transport":"nein",
+        "versicherung":"ja",
+        "vorname":"Jim"
     }
 ]

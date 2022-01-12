@@ -7,24 +7,24 @@
           integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" rel="stylesheet">
     <link href="{{ url_for('static', filename='main.css') }}" rel="stylesheet">
 
-    <titel>Anmeldung abgeschlossen.</titel>
+    <h6>Yeah! Deine Anmeldung abgeschlossen.</h6>
+
 </head>
 <body>
 
-<h2>Hey {{vorname}} </h2>
+<h1>Hey {{vorname}} </h1>
 <h3> Danke für dein Buchung. Hier sind deine Buchungsdetails: </h3>
-<h6> Name: {{name}}</h6>
-<h6> Vorname: {{vorname}}</h6>
-<h6> Geschlecht: {{sex}}</h6>
-<h6> Adresse: {{adresse}}</h6>
-<h6> Geburtstag: {{geburi}}</h6>
-<h6> E-Mail: {{mail}}</h6>
-<h6> Telfonnummer: {{tel}}</h6>
+<p> Name: {{name}}</p>
+<p> Vorname: {{vorname}}</p>
+<p> Geschlecht: {{sex}}</p>
+<p> Adresse: {{adresse}}</p>
+<p> Geburtstag: {{geburi}}</p>
+<p> E-Mail: {{mail}}</p>
+<p> Telfonnummer: {{tel}}</p>
 
 <h2> Dein Surf-Kalender:</h2>
-<h6> Dein Level: {{level}} </h6>
-<h6> Deine Kurse:
-
+<p> Dein Level: {{level}} </p>
+<p> Deine Kurse:
     <ul>
 {% for ding in beginnerdate %}
 <li>{{ ding }}</li>
@@ -43,9 +43,10 @@
 
 </ul>
 
-</h6>
+</p>
 
-<h6> Endpreis: {{costs}} Fr. </h6>
+<p> Dein Endpreis: CHF {{costs}}.-  </p>
+<h6> In Kürze wirst du eine Bestätigungs E-Mail erhalten inklusive Rechnungsdetails.</h6>
 
 </body>
 </html>

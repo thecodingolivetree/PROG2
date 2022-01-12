@@ -7,21 +7,24 @@
           integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" rel="stylesheet">
     <link href="{{ url_for('static', filename='main.css') }}" rel="stylesheet">
     <title>Willkommen! </title>
-    <h1>Buche deine Surflesson noch heute!</h1>
+    <h1>Olivia's Surfschool</h1>
 
 </head>
 <body>
-<h2> Aloha {{ name }}! </h2>
-<div>
-Schön bist du hier. Buche heute deine Surflektion mit mir.
+<div class="begruessung" id="begruessung">
+    <h3> Aloha {{ name }}! </h3>
+    <h6> Buche noch heute deine Surflektion.</h6>
 </div>
 
 <p></p>
 
-<div>
+<div class="buttonsubscribe" id="button1">
     <form action='/create/subscription' method="get"><input class="btn btn-primary" type="submit" value="Anmelden"></form>
+    </div>
 <p></p>
-    <form action='/admin/page' method="get"><input class="btn btn-secondary" type="submit" value="Admin"></form> #funktioniertned
+
+<div class ="buttonadmin" id="buttonadmin">
+    <form action='/admin/page' method="get"><input class="btn btn-secondary" type="submit" value="Admin"></form>
 </div>
 
 </body>

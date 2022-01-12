@@ -54,14 +54,14 @@ def auflisten():
     return anmeldungen_liste
 
 
-@app.route("/", methods=['GET', 'POST'])  # "/" bedeutet es rootet immer zurück auf die Landingpage
+@app.route("/", methods=['GET', 'POST'])  # "/" - rootet immer zurück auf die Landingpage
 def hello():
-    return render_template("index.html", name="Du Schönheit")
+    return render_template("index.html", name="Surfer:in!")
 
 
 @app.route("/create/subscription", methods=['GET'])
 def render_create_subscription_form():
-    return render_template("create_subscription.html", name="Du Schönheit")
+    return render_template("create_subscription.html", name="Surfer:in!")
 
 
 @app.route("/save/subscription", methods=['POST'])

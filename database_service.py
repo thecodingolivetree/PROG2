@@ -64,33 +64,33 @@ def get_course_summary():
 
     # Intermediate courses
     course4 = {
-        "date": "10:00 Uhr, 22.02.2022",
+        "date": "07:00 Uhr, 26.02.2022",
         "numberOfParticipants": 0,
         "money": 0
     }
     course5 = {
-        "date": "10:00 Uhr, 22.02.2022",
+        "date": "15:00 Uhr, 26.02.2022",
         "numberOfParticipants": 0,
         "money": 0
     }
     course6 = {
-        "date": "10:00 Uhr, 22.02.2022",
+        "date": "09:00 Uhr, 27.02.2022",
         "numberOfParticipants": 0,
         "money": 0
     }
     # Advanced courses
     course7 = {
-        "date": "10:00 Uhr, 22.02.2022",
+        "date": "07:00 Uhr, 12.02.2022",
         "numberOfParticipants": 0,
         "money": 0
     }
     course8 = {
-        "date": "10:00 Uhr, 22.02.2022",
+        "date": "07:00 Uhr, 13.02.2022",
         "numberOfParticipants": 0,
         "money": 0
     }
     course9 = {
-        "date": "10:00 Uhr, 22.02.2022",
+        "date": "16:00 Uhr, 13.02.2022",
         "numberOfParticipants": 0,
         "money": 0
     }
@@ -167,4 +167,5 @@ def get_course_summary():
     courses.append(course8)
     courses.append(course9)
     return courses
-    # "07:00 Uhr, 26.02.2022"
+
+

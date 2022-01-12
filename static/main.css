@@ -1,14 +1,32 @@
-h1 {
-color:LightSeaGreen;
+.begruessung {
+margin-left: 20px;
 }
 
+.buttonsubscribe {
+margin-left: 20px;
+}
+
+.buttonadmin {
+margin-top: 10px;
+margin-left: 20px;
+font:serif;
+}
+
+h1 {
+color:Teal;
+margin-bottom: 30px;
+margin-top:10px;
+padding: 20px;
+}
+
+h2 {
+color: LightSeaGreen;
+
+}
 h3 {
 color:LightSeaGreen;
 }
 
-h2 {
-color:LightSeaGreen;
-}
 
 h4 {
 color:LightSeaGreen;
@@ -17,15 +35,30 @@ color:LightSeaGreen;
 h6 {
 color:black;
 }
+
 .create-subscription-form {
-    width: 70%;
-    margin: auto;
+    width: 80%;
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+p {
+margin-left: 20px;
+font-size: 20px;
 }
 
 table {
   font-family: arial, sans-serif;
   border-collapse: collapse;
-  width: 100%;
+  width: 90%;
+  margin-left: 20px;
+  margin-bottom: 30px;
+  margin-top: 30px;
+
+}
+
+.tb {
+border: 1px solid #ffffff;
 }
 
 td, th {
@@ -37,5 +70,7 @@ td, th {
 tr:nth-child(even) {
   background-color: #dddddd;
 }
+#https://www.w3schools.com/html/tryit.asp?filename=tryhtml_table_intro
 
-body {background-color: azure}
+
+background-color: AliceBlue;
