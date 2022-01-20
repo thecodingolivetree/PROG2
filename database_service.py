@@ -1,17 +1,19 @@
 import json
 
+#Quelle Video Reihe: https://www.youtube.com/watch?v=GgS8-mn9zoM&list=PLNmsVeXQZj7otfP2zTa8AIiNIWVg0BRqs&index=13
+
 def save_subscription(beginnerdate, intermediatedate, advanceddate,
                       level, surfboard, insurance, transport, sex, name, vorname,
                       adresse, geburi, mail, tel, costs):
     get_costs_dict()
     d = open("data/subscriptions.json")
-    datenspeicher_list = json.load(d)
+    datenspeicher_list = json.load(d) #Speicherung der Formulardaten im Json File
 
     datenspeicher_list.append({"level": level, "datumBeginner": beginnerdate, "datumIntermediate": intermediatedate,
                                "datumAdvanced": advanceddate, "surfboard": surfboard, "versicherung": insurance,
                                "geschlecht": sex, "name": name, "vorname": vorname, "adresse": adresse,
                                "geburtstag": geburi, "mail": mail, "telefon": tel, "transport": transport,
-                               "costs": costs})
+                               "costs": costs}) #Liste wird erweitert
 
     with open('data/subscriptions.json', 'w') as f:
         json.dump(datenspeicher_list, f, indent=4, sort_keys=True,
@@ -102,8 +104,8 @@ def get_course_summary():
     d = open("data/costs.json")
     costs = json.load(d)
 
-    for entry in datenspeicher_list:
-        print(entry)
+    for entry in datenspeicher_list: #Folien
+        #print(entry)
         if course1['date'] in entry['datumBeginner']:
             course1['numberOfParticipants'] = course1['numberOfParticipants'] + 1
             course1['money'] = course1['money'] + calculate_optional_selection_cost(entry['surfboard'],
@@ -156,7 +158,7 @@ def get_course_summary():
                                                                                     entry['transport'],
                                                                                     entry['versicherung']) + 50
 
-    courses = []
+    courses = [] #Leere Liste wo Kurse angehängt werden
     courses.append(course1)
     courses.append(course2)
     courses.append(course3)

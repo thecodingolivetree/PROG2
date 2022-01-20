@@ -20,7 +20,7 @@ einzusehen. Dort sieht er auch die bisher generierten Einnahmen pro Kurs sowie d
 
 **Workflow**
 
-Die Dateneingabe erfolgt wie Formular. Es beinhaltet verschiedene Eingabeelemente
+Die Dateneingabe erfolgt mit Formular. Es beinhaltet verschiedene Eingabeelemente
 wie Freie Textfelder, Dropdown und Checkboxen. 
 
 **Datenverarbeitung und Speicherung**
@@ -34,8 +34,11 @@ und können laufend angepasst werden. Die Preise für die Lektionen bleibt stets
 - Nutzersicht: Die Daten können inklusive Endpreis für der/die User:in nach Anmeldung eingesehen werden.
 - Adminsicht: Der Admin kann die Anzahl Anmeldungen und Einnahmen pro Kurs auf seiner persönlichen
 Admin-Page ansehen. Dort findet er auch die Gesamteinnahmen.
-- 
+
+**Skalierbarkeit**
+
+- Passwort für die Adminpage
+- Direkte Sendung einer E-Mail nach Absenden des Formulars
+
 **Status**
-
-In Bearbeitung
-
+Abgeschlossen

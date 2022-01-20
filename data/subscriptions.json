@@ -135,5 +135,67 @@
         "transport":"nein",
         "versicherung":"ja",
         "vorname":"Jim"
+    },
+    {
+        "adresse":"Front-End Weg 67, 7876 Bellikon",
+        "costs":100,
+        "datumAdvanced":[
+            "07:00 Uhr, 13.02.2022",
+            "16:00 Uhr, 13.02.2022"
+        ],
+        "datumBeginner":[],
+        "datumIntermediate":[],
+        "geburtstag":"1988-10-20",
+        "geschlecht":"maennlich",
+        "level":"beginner",
+        "mail":"078 567 26 26",
+        "name":"Novak",
+        "surfboard":"nein",
+        "telefon":"andrej.novak@gmail.com",
+        "transport":"nein",
+        "versicherung":"nein",
+        "vorname":"Andrej"
+    },
+    {
+        "adresse":"Mausstrasse 5, 8982 Bubikon",
+        "costs":200,
+        "datumAdvanced":[
+            "07:00 Uhr, 12.02.2022"
+        ],
+        "datumBeginner":[
+            "10:00 Uhr, 22.02.2022"
+        ],
+        "datumIntermediate":[
+            "07:00 Uhr, 26.02.2022"
+        ],
+        "geburtstag":"1999-05-05",
+        "geschlecht":"weiblich",
+        "level":"beginner",
+        "mail":"078 876 67 87",
+        "name":"Meier",
+        "surfboard":"ja",
+        "telefon":"sarahm@hotmail.com",
+        "transport":"ja",
+        "versicherung":"nein",
+        "vorname":"Sarah"
+    },
+    {
+        "adresse":"Ukutukuweg 6, 8793 Cham",
+        "costs":70,
+        "datumAdvanced":[],
+        "datumBeginner":[],
+        "datumIntermediate":[
+            "09:00 Uhr, 27.02.2022"
+        ],
+        "geburtstag":"1977-12-19",
+        "geschlecht":"maennlich",
+        "level":"intermediate",
+        "mail":"076 567 48 92",
+        "name":"Martini",
+        "surfboard":"ja",
+        "telefon":"giusi_873@gmx.ch",
+        "transport":"nein",
+        "versicherung":"nein",
+        "vorname":"Giuseppe"
     }
 ]

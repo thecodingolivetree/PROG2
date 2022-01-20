@@ -21,6 +21,7 @@ padding: 20px;
 
 h2 {
 color: LightSeaGreen;
+margin-left: 20px;
 
 }
 h3 {
@@ -70,7 +71,7 @@ td, th {
 tr:nth-child(even) {
   background-color: #dddddd;
 }
-#https://www.w3schools.com/html/tryit.asp?filename=tryhtml_table_intro
+<--! https://www.w3schools.com/html/tryit.asp?filename=tryhtml_table_intro -->
 
 
 background-color: AliceBlue;
