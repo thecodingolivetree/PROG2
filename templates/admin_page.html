@@ -40,8 +40,8 @@
         <th>geschlecht</th>
         <th>geburtstag</th>
         <th>adresse</th>
-        <th>telefon</th>
         <th>mail</th>
+        <th>telefon</th>
         <th>level</th>
         <th>Advanced</th>
         <th>Intermediate</th>
@@ -51,22 +51,22 @@
         <th>Versicherung</th>
 
     </tr>
-    {% for ding in dinger %}
+    {% for eingabe in anmeldungen %} <!-- anmeldungen inhalt von json file -->
     <tr>
-        <td>{{ding.name}}</td>
-        <td>{{ding.vorname}}</td>
-        <td>{{ding.geschlecht}}</td>
-        <td>{{ding.geburtstag}}</td>
-        <td>{{ding.adresse}}</td>
-        <td>{{ding.telefon}}</td>
-        <td>{{ding.mail}}</td>
-        <td>{{ding.level}}</td>
-        <td>{{ding.datumAdvanced}}</td>
-        <td>{{ding.datumIntermediate}}</td>
-        <td>{{ding.datumBeginner}}</td>
-        <td>{{ding.surfboard}}</td>
-        <td>{{ding.transport}}</td>
-        <td>{{ding.versicherung}}</td>
+        <td>{{eingabe.name}}</td>
+        <td>{{eingabe.vorname}}</td>
+        <td>{{eingabe.geschlecht}}</td>
+        <td>{{eingabe.geburtstag}}</td>
+        <td>{{eingabe.adresse}}</td>
+        <td>{{eingabe.telefon}}</td>
+        <td>{{eingabe.mail}}</td>
+        <td>{{eingabe.level}}</td>
+        <td>{{eingabe.datumAdvanced}}</td>
+        <td>{{eingabe.datumIntermediate}}</td>
+        <td>{{eingabe.datumBeginner}}</td>
+        <td>{{eingabe.surfboard}}</td>
+        <td>{{eingabe.transport}}</td>
+        <td>{{eingabe.versicherung}}</td>
 
     </tr>
     {% endfor %}

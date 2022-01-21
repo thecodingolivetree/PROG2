@@ -31,17 +31,17 @@ def ausgabe():
     kurse = database_service.get_course_summary()
     anmeldungen = database_service.get_all_subscriptions()  # greift auf die Datenbank mit Anmeldung zu, dinger sind die anmeldungen.
     total = get_total_of_all_courses(kurse)
-    return render_template("admin_page.html", dinger=anmeldungen, kurse=kurse, total=total)
+    return render_template("admin_page.html", anmeldungen=anmeldungen, kurse=kurse, total=total)
 
 
-def get_total_of_all_courses(kurse):
+def get_total_of_all_courses(kurse): #Zusammenrechnen des Totals der Kurse
     total = 0
     for course in kurse:
         total = total + course['money']
     return total
 
 
-def auflisten():
+def auflisten(): #https://docs.microsoft.com/en-us/dotnet/visual-basic/language-reference/operators/addition-assignment-operator
     anmeldungen = ""
     for key, value in anmeldungen.items():
         zeile = str(key) + ": " + value + "<br>"
@@ -88,7 +88,7 @@ def save_new_subscription():
                            mail=mail, tel=tel, sex=sex, level=level, beginnerdate=beginnerdate,
                            intermediatedate=intermediatedate, advanceddate=advanceddate, surfboard=surfboard,
                            insurance=insurance, transport=transport, costs=costs)
-                            #Red Code = Variabel wird benannt und es kann im html File angesprochen werden.
+                            #Red Code = Ausgabe Buchungsdetails Variabel wird benannt und es kann im html File angesprochen werden
 
 if __name__ == "__main__":
     app.run(debug=True, port=5000)  # IP Adresse ist das Gebäude, Port ist die Tür "wo es klingelt"

@@ -20,19 +20,18 @@ def save_subscription(beginnerdate, intermediatedate, advanceddate,
                   separators=(",", ":"))  # https://docs.python.org/3/library/json.html
 
 
-def get_costs_dict():
-    d = open("data/costs.json")
-    costs = json.load(d)
-    return costs
 
-
-def get_all_subscriptions():
+def get_all_subscriptions(): #Öffnen des Json File und Speicherung in Variabel namens "datenspeicher_list"
     d = open("data/subscriptions.json")
     datenspeicher_list = json.load(d)
     return datenspeicher_list
 
+def get_costs_dict(): # Kosten werden im Dictionary im Json file costs.json geholt
+    d = open("data/costs.json")
+    costs = json.load(d)
+    return costs
 
-def calculate_optional_selection_cost(surfboard, transport, insurance):
+def calculate_optional_selection_cost(surfboard, transport, insurance):  #Berechnung totale Kosten im Formular, Zugriff auf costs.json
     cost_metrics = get_costs_dict()
     costs = 0
     if surfboard == "ja":

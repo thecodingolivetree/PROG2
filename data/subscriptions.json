@@ -197,5 +197,104 @@
         "transport":"nein",
         "versicherung":"nein",
         "vorname":"Giuseppe"
+    },
+    {
+        "adresse":"Sebastianweg 67, 8765 Bubikon",
+        "costs":150,
+        "datumAdvanced":[
+            "07:00 Uhr, 12.02.2022",
+            "07:00 Uhr, 13.02.2022",
+            "16:00 Uhr, 13.02.2022"
+        ],
+        "datumBeginner":[],
+        "datumIntermediate":[],
+        "geburtstag":"1998-07-07",
+        "geschlecht":"weiblich",
+        "level":"advanced",
+        "mail":"076 567 26 56",
+        "name":"M\u00fcller",
+        "surfboard":"nein",
+        "telefon":"muellern@gmail.ch",
+        "transport":"nein",
+        "versicherung":"nein",
+        "vorname":"Nina"
+    },
+    {
+        "adresse":"Bildschirmstrasse, 7897 R\u00fcti",
+        "costs":200,
+        "datumAdvanced":[],
+        "datumBeginner":[
+            "10:00 Uhr, 22.02.2022"
+        ],
+        "datumIntermediate":[
+            "07:00 Uhr, 26.02.2022"
+        ],
+        "geburtstag":"2005-08-09",
+        "geschlecht":"andere",
+        "level":"beginner",
+        "mail":"076 526 63 76",
+        "name":"B\u00fcsser",
+        "surfboard":"ja",
+        "telefon":"kiara@hotmail.com",
+        "transport":"ja",
+        "versicherung":"ja",
+        "vorname":"Kiara"
+    },
+    {
+        "adresse":"Wasserstrasse 7, 9892 W\u00e4denswil",
+        "costs":80,
+        "datumAdvanced":[],
+        "datumBeginner":[
+            "08:00 Uhr, 23.02.2022"
+        ],
+        "datumIntermediate":[],
+        "geburtstag":"1999-09-09",
+        "geschlecht":"maennlich",
+        "level":"beginner",
+        "mail":"078 766 26 36",
+        "name":"Schmidmeister",
+        "surfboard":"nein",
+        "telefon":"s_schmidm@gmx.ch",
+        "transport":"ja",
+        "versicherung":"nein",
+        "vorname":"Sebastian"
+    },
+    {
+        "adresse":"Meierweg 67, 2786 Chur",
+        "costs":150,
+        "datumAdvanced":[],
+        "datumBeginner":[],
+        "datumIntermediate":[
+            "15:00 Uhr, 26.02.2022"
+        ],
+        "geburtstag":"9872-08-09",
+        "geschlecht":"maennlich",
+        "level":"intermediate",
+        "mail":"076 562 26 78",
+        "name":"Hansli",
+        "surfboard":"ja",
+        "telefon":"hanslisepp@gmail.com",
+        "transport":"ja",
+        "versicherung":"ja",
+        "vorname":"Sepp"
+    },
+    {
+        "adresse":"Hollandweg 6c, 9273 Hausen",
+        "costs":70,
+        "datumAdvanced":[
+            "07:00 Uhr, 13.02.2022"
+        ],
+        "datumBeginner":[],
+        "datumIntermediate":[],
+        "geburtstag":"1997-07-07",
+        "geschlecht":"weiblich",
+        "level":"advanced",
+        "mail":"076 998 67 76",
+        "name":"Monje",
+        "surfboard":"ja",
+        "telefon":"maggiem_287@hotmail.com",
+        "transport":"nein",
+        "versicherung":"nein",
+        "vorname":"Maggie"
     }
 ]
